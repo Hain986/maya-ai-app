@@ -7,6 +7,7 @@
   "scripts": {
     "dev:web": "npm --workspace apps/web run dev",
     "dev:mobile": "npm --workspace apps/mobile run start",
+    "dev:api": "npm --workspace apps/api run dev",
     "build:web": "npm --workspace apps/web run build",
     "build:mobile": "npm --workspace apps/mobile run build",
     "lint": "npm --workspace apps/web run lint"

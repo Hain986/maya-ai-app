@@ -1,34 +1,54 @@
 # Maya AI App
 
-Maya AI is a futuristic AI companion experience built for both web and Android. This repository contains a starter project with a responsive web app and a mobile-ready Expo app.
+Maya AI is a futuristic AI companion experience built for both web and Android. This repository includes:
+
+- a responsive web app with a 3D avatar scene
+- an Android-ready Expo mobile shell
+- an API backend scaffold for live AI chat using OpenAI
 
 ## Stack
 
 - Web: React + Vite + TypeScript
 - 3D UI: Three.js + React Three Fiber
 - Mobile: Expo + React Native
-- Design: Futuristic dark theme with a 3D female avatar
+- Backend: Express + OpenAI-compatible API
+- Design: futuristic dark UI with a female avatar
 
 ## Apps
 
-- `apps/web` — responsive web version of Maya AI
-- `apps/mobile` — Android-ready Expo app shell
+- `apps/web` — web version of Maya AI
+- `apps/mobile` — Android-ready Expo app
+- `apps/api` — backend AI chat API
 
-## Getting started
+## Setup
 
-### Install dependencies
+1. Copy the environment template:
+
+```bash
+cp .env.example .env
+```
+
+2. Add your OpenAI API key inside `.env` if you want live AI responses.
+
+3. Install packages:
 
 ```bash
 npm install
 ```
 
-### Run the web app
+4. Start backend:
+
+```bash
+npm run dev:api
+```
+
+5. Start the web app:
 
 ```bash
 npm run dev:web
 ```
 
-### Run the mobile app
+6. Start the mobile app:
 
 ```bash
 npm run dev:mobile
@@ -36,11 +56,11 @@ npm run dev:mobile
 
 ## Notes
 
-This is the initial foundation for Maya AI. The next stages can include:
+This project is structured as a production-ready starter for a Maya AI companion app. You can add:
 
-- real AI API integration
-- speech-to-text / text-to-speech
-- persistent chat memory
-- authentication
-- 3D avatar animation polish
-- Android APK build configuration
+- voice chat
+- persistent conversation memory
+- sign-in flows
+- premium personalization
+- Android APK build setup
+- real deployment to web/mobile hosting
